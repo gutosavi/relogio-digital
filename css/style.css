@@ -14,6 +14,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 section#relogio{
@@ -25,6 +26,7 @@ section#relogio{
     border: transparent;
     box-shadow: 0px 0px 15px rgba(255, 255, 255, .2);
     border-radius: 8px;
+    transition: width 0.2s linear;
 }
 
 section#relogio div{
@@ -39,6 +41,7 @@ section#relogio div{
     box-shadow: 5px 5px 15px rgba(0, 0, 0,.7);
     border-radius: 8px;
     letter-spacing: 3px;
+    transition: width 0.2s linear;
 }
 
 div span{
@@ -49,4 +52,17 @@ div span{
 div span.tempo{
     font-size: 16px;
     font-weight: 100;
+}
+
+@media screen and (max-width: 500px) {
+    body{
+        flex-direction: column;
+    }
+    
+    section#relogio{
+        flex-direction: column;
+        width: 200px;
+        height: 600px;
+    }
+
 }
