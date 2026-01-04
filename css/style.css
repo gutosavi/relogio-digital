@@ -10,11 +10,10 @@
 body{
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(142deg, #FF512F, #DD2476);
+    background: linear-gradient(280deg, #2C3E50, #3498DB);
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 section#relogio{
